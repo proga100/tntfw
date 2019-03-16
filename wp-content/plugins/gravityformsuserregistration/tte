@@ -1,0 +1,138 @@
+<form name="addpos" method="post" action="add.asp">
+  	<input type="hidden" name="pid" value="11527">
+  	<input type="hidden" name="peid" value="14382">
+  	<input type="hidden" name="eid" value="556">
+  	<input type="hidden" name="mid" value="5">
+  	<input type="hidden" name="typ" value="5">
+  	<input type="hidden" name="xid" value="">
+  	<input type="hidden" name="fct" value="">
+    <table border="0" width="100%" cellspacing="0" cellpadding="0">
+      <tbody><tr>
+        <td width="100%" class="title">&nbsp;Add Position</td>
+      </tr>
+  	</tbody></table>
+    <table border="0" width="700" cellspacing="0" cellpadding="1">
+  	  <tbody><tr height="0">
+  	    <td width="120"></td>
+        <td width="330"></td>
+        <td width="150"></td>
+
+        <td width="100"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="border-right:none;" class="title">&nbsp;Please enter full name below and click "Add".</td>
+        <td colspan="2" style="border-left:none;" class="title" align="right">
+
+          <input type="button" tabindex="7" class="button_add" value="Add &amp; Invite" onclick="addPosition(this.form)">&nbsp;
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>First Name:</b></td>
+        <td colspan="3"><input type="text" name="fn" onkeypress="check4Return();" tabindex="1" value="" style="width:150; background-color:cornsilk;"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>Last Name:</b></td>
+        <td colspan="3"><input type="text" name="ln" onkeypress="check4Return();" tabindex="2" value="" style="width:150; background-color:cornsilk;"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>Address:</b></td>
+        <td colspan="3"><input type="text" name="adr" onkeypress="check4Return();" tabindex="3" value="" style="width:200; background-color:cornsilk;"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>City,State,Zip:</b></td>
+        <td colspan="3">
+          <input type="text" name="cty" onkeypress="check4Return();" tabindex="5" value="" style="width:100; background-color:cornsilk;">&nbsp;
+          <select name="stt" onkeypress="check4Return();" tabindex="6" style="width:45; background-color:cornsilk;">
+            <option value="0">
+
+          		</option><option value="2">AL
+          		</option><option value="1">AK
+          		</option><option value="4">AZ
+          		</option><option value="3">AR
+          		</option><option value="5">CA
+          		</option><option value="6">CO
+          		</option><option value="7">CT
+          		</option><option value="8">DE
+          		</option><option value="9">FL
+          		</option><option value="10">GA
+          		</option><option value="11">HI
+          		</option><option value="13">ID
+          		</option><option value="14">IL
+          		</option><option value="15">IN
+          		</option><option value="12">IA
+          		</option><option value="16">KS
+          		</option><option value="17">KY
+          		</option><option value="18">LA
+          		</option><option value="21">ME
+          		</option><option value="20">MD
+          		</option><option value="19">MA
+          		</option><option value="22">MI
+          		</option><option value="23">MN
+          		</option><option value="25">MS
+          		</option><option value="24">MO
+          		</option><option value="26">MT
+          		</option><option value="29">NE
+          		</option><option value="34">NV
+          		</option><option value="30">NH
+          		</option><option value="31">NJ
+          		</option><option value="33">NM
+          		</option><option value="32">NY
+          		</option><option value="27">NC
+          		</option><option value="28">ND
+          		</option><option value="35">OH
+          		</option><option value="36">OK
+          		</option><option value="37">OR
+          		</option><option value="38">PA
+          		</option><option value="39">RI
+          		</option><option value="40">SC
+          		</option><option value="41">SD
+          		</option><option value="42">TN
+          		</option><option value="43">TX
+          		</option><option value="44">UT
+          		</option><option value="46">VT
+          		</option><option value="45">VA
+          		</option><option value="47">WA
+          		</option><option value="49">WV
+          		</option><option value="48">WI
+          		</option><option value="50">WY
+          </option></select>&nbsp;
+          <input type="text" name="zip" onkeypress="check4Return();" tabindex="7" value="" style="width:43; background-color:cornsilk;">
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>Phone:</b></td>
+        <td colspan="3"><input type="text" name="phn" onkeypress="check4Return();" tabindex="8" value="" style="width:100; background-color:cornsilk;"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>Gender:</b></td>
+        <td colspan="3">
+         	<select name="gnd" onkeypress="check4Return();" tabindex="11" style="width:70; background-color:cornsilk;">
+            <option value="">
+            </option><option value="M">Male
+            </option><option value="F">Female
+          </option></select>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>EMail:</b></td>
+        <td colspan="3">
+
+        <input type="text" name="eml" onkeypress="check4Return();" tabindex="3" value="" style="width:250; background-color:cornsilk;"></td>
+      </tr>
+      <tr>
+        <td>&nbsp;<b>Position Type:</b></td>
+        <td colspan="3">
+          <select name="pos" tabindex="4" onkeypress="check4Return();" style="width:150; background-color:cornsilk;">
+          	<option value="">
+          	</option><option value="H">Head Coach
+          	</option><option value="A">Assistant Coach
+          	</option><option value="V">Adult Volunteer
+                     </option></select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">&nbsp;</td>
+      </tr>
+
+    </tbody></table>
+  </form>

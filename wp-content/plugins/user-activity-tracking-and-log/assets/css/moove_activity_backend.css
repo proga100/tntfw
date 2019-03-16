@@ -1,0 +1,293 @@
+/*
+* Set colors
+*/
+.moove-donation-box-wrapper{
+  padding-right: 40%;
+}
+
+
+.moove-donation-box{
+  position: relative;
+  width: calc(100% - 20px);
+  margin: 16px 0;
+  padding: 0 15px 10px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  background: #fff;
+  font-size: 13px;
+}
+
+.moove-donation-box .notice-dismiss:before{
+  float: left;
+  margin:0 4px -2px 0;
+}
+
+.ma-metabox-wrapper .ma-trigger-campaign {
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+.ma-metabox-wrapper .ma-log {
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.ma-metabox-wrapper .ma-log table.ma-table {
+  width: 100%;
+}
+.ma-metabox-wrapper .ma-log table.ma-table td {
+  padding: 5px;
+}
+.ma-metabox-wrapper .ma-log table.ma-table thead tr {
+  background-color: #ececec;
+}
+.moove-activity-log-settings {
+  float: left;
+}
+.moove-activity-log-delete-text {
+  margin: 0;
+  line-height: 30px;
+  position: relative;
+  left: 10px;
+  float: left;
+  margin-right: 25px;
+}
+
+#uat-settings-cnt .uat-tab-section-cnt :after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#uat-settings-cnt .nav-tab-wrapper {
+  width: 200px;
+  display: inline-block;
+  padding-right: 17px;
+  padding-top: 0;
+  position: relative;
+}
+#uat-settings-cnt .nav-tab-wrapper a.nav-tab {
+  font-size: 12px;
+  padding: 10px 8px;
+  width: 100%;
+  margin-left: 0;
+  outline: none;
+  box-shadow: none;
+  border-right: 0;
+  position: relative;
+  white-space: normal;
+  line-height: 1.3;
+}
+#uat-settings-cnt .nav-tab-wrapper .nav-tab-active, 
+#uat-settings-cnt .nav-tab-wrapper .nav-tab-active:focus, 
+#uat-settings-cnt .nav-tab-wrapper .nav-tab-active:focus:active, 
+#uat-settings-cnt .nav-tab-wrapper .nav-tab-active:hover {
+  border-bottom: 1px solid #ccc;
+  color: #00a0d2;
+  outline: none ;
+  box-shadow: none;
+}
+#uat-settings-cnt .nav-tab-wrapper .nav-tab-active:after {
+  content: "";
+  position: absolute;;
+  right: -1px;
+  top: 0;
+  width: 2px;
+  bottom: 0;
+  background-color: #f1f1f1;
+  display: block;
+}
+#uat-settings-cnt .moove-form-container {
+  width: calc( 100% - 279px );
+  float: right;
+  padding: 5px 30px 30px;
+  border: 1px solid #ccc;
+}
+
+
+.moove-activity-plugin-wrap,
+.moove-activity-log-report  {
+  position: relative;
+}
+.moove-activity-plugin-wrap .moove-logo,
+.moove-activity-log-report .moove-logo {
+  display: none;
+  width: 67px;
+  height: 16px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: url('../images/logo_moove.png') no-repeat;
+  background-size: cover;
+}
+/*----- Accordion -----*/
+.moove-accordion, .moove-accordion * {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.moove-accordion {
+    overflow:hidden;
+}
+.moove-accordion table {
+  width: 100%;
+}
+.moove-accordion table thead {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-style: 16px;
+}
+.moove-accordion a:focus,
+.moove-accordion a:focus .media-icon img {
+    box-shadow: none;
+}
+.moove-accordion a {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+/*----- Section Titles -----*/
+.moove-accordion-section-title {
+  width:100%;
+  padding: 10px;
+  display:inline-block;
+  margin-bottom: 5px;
+  background:#eaeaea;
+  border-radius: 3px;
+  transition:all linear 0.15s;
+  /* Type */
+  font-size:13px;
+  font-weight: 700;
+  color:#000;
+}
+
+.moove-accordion-section-title.active, .moove-accordion-section-title:hover {
+  background:#4c4c4c;
+  color: #fff;
+  /* Type */
+  text-decoration:none;
+}
+
+.moove-accordion-section:last-child .moove-accordion-section-title {
+  border-bottom:none;
+}
+
+/*----- Section Content -----*/
+.moove-accordion-section-content {
+  padding: 15px 0;
+  display:none;
+}
+.moove-accordion-cnt {
+  background-color: #fff;
+  padding: 20px;
+}
+.moove-activity-log-report table {
+  width: 100%;
+
+}
+.moove-activity-log-report .moove-activity-log-table {
+  background: #fff;
+  /*padding: 20px;*/
+}
+.moove-activity-log-report .load-more-container {
+  display: none;
+}
+.moove-activity-log-report .pullright {
+  float: right;
+  margin-left: 5px;
+}
+.moove-activity-screen-meta {
+  position: relative;
+  z-index: 10;
+}
+
+
+.uat-tab-section-cnt {
+  max-width: calc(100% - 380px);
+  display: inline-block;
+  width: 100%;
+}
+.moove-uat-plugins-info-boxes {
+  display: inline-block;
+  float: right;
+  width: 350px;
+  background-color: #f1f1f1;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box {
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box.m-plugin-box-highlighted {
+  border: 2px solid #f79322;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .box-header {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .box-header h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .box-content {
+  padding: 10px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .box-content p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .box-content hr {
+  margin: 10px 0;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-stats .plugin-downloads,
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-stats .plugin-active-installs {
+  display: inline-block;
+  width: calc( 100% - 120px ); 
+  line-height: 20px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-stats .plugin-rating {
+  display: inline-block;
+  float: right;
+  max-width: 100px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-features {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-features li {
+  list-style-type: square;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-buy-now-btn {
+  display: block;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  padding: 7px 20px;
+  background-color: #f79322;
+  color: #fff;
+  text-align: center;
+  transition: all .3s ease;
+  margin: 15px 0;
+  font-weight: 600;
+  font-size: 12px;
+}
+.moove-uat-plugins-info-boxes .m-plugin-box .plugin-buy-now-btn:hover {
+  background-color: #232323;
+}
+
+@media (max-width: 1280px) {
+    .gdpr-tab-section-cnt {
+        max-width: 100%;
+        display: block;
+        width: 100%;
+    }
+    .moove-uat-plugins-info-boxes {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 15px 0;
+        background-color: #f1f1f1;
+    }
+}

@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-06-25 15:06+0200\n"
+"PO-Revision-Date: 2017-06-25 15:06+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: gravitywp-css-selector.php\n"
+
+#: gravitywp-css-selector.php:24
+msgid "Select a CSS ready class"
+msgstr ""
+
+#: gravitywp-css-selector.php:27
+msgid "(2) Two Columns"
+msgstr ""
+
+#: gravitywp-css-selector.php:29
+msgid "Left Half"
+msgstr ""
+
+#: gravitywp-css-selector.php:30
+msgid "Right Half"
+msgstr ""
+
+#: gravitywp-css-selector.php:34
+msgid "(3) Three Columns"
+msgstr ""
+
+#: gravitywp-css-selector.php:36
+msgid "Left Third"
+msgstr ""
+
+#: gravitywp-css-selector.php:37
+msgid "Middle Third"
+msgstr ""
+
+#: gravitywp-css-selector.php:38
+msgid "Right Third"
+msgstr ""
+
+#: gravitywp-css-selector.php:42
+msgid "(4) Four Columns"
+msgstr ""
+
+#: gravitywp-css-selector.php:44
+msgid "1st Quarter"
+msgstr ""
+
+#: gravitywp-css-selector.php:45
+msgid "2nd Quarter"
+msgstr ""
+
+#: gravitywp-css-selector.php:46
+msgid "3rd Quarter"
+msgstr ""
+
+#: gravitywp-css-selector.php:47
+msgid "4th Quarter"
+msgstr ""
+
+#: gravitywp-css-selector.php:51
+msgid "List Layout"
+msgstr ""
+
+#: gravitywp-css-selector.php:53 gravitywp-css-selector.php:54
+#: gravitywp-css-selector.php:55 gravitywp-css-selector.php:56
+msgid "Column List"
+msgstr ""
+
+#: gravitywp-css-selector.php:57
+msgid "Inline List"
+msgstr ""
+
+#: gravitywp-css-selector.php:61
+msgid "List Heights"
+msgstr ""
+
+#: gravitywp-css-selector.php:63 gravitywp-css-selector.php:64
+#: gravitywp-css-selector.php:65 gravitywp-css-selector.php:66
+#: gravitywp-css-selector.php:67 gravitywp-css-selector.php:68
+msgid "Height"
+msgstr ""
+
+#: gravitywp-css-selector.php:72
+msgid "Others"
+msgstr ""
+
+#: gravitywp-css-selector.php:74
+msgid "Scrolling Paragraph Text"
+msgstr ""
+
+#: gravitywp-css-selector.php:75
+msgid "Hide Time am/pm"
+msgstr ""
+
+#: gravitywp-css-selector.php:76
+msgid "Hide Character Counter"
+msgstr ""
+
+#: gravitywp-css-selector.php:80 gravitywp-css-selector.php:102
+msgid "Gravity PDF"
+msgstr ""
+
+#: gravitywp-css-selector.php:82
+msgid "Exclude from PDF"
+msgstr ""
+
+#: gravitywp-css-selector.php:83
+msgid "Pagebreak"
+msgstr ""
+
+#: gravitywp-css-selector.php:87
+msgid "Gravity Wiz (Perks)"
+msgstr ""
+
+#: gravitywp-css-selector.php:89
+msgid "Copy Cat"
+msgstr ""
+
+#: gravitywp-css-selector.php:95
+msgid "Documentation"
+msgstr ""
+
+#: gravitywp-css-selector.php:97
+msgid "Click on one or more CSS Ready Classes to add them."
+msgstr ""
+
+#: gravitywp-css-selector.php:98
+msgid "Tip: double-click adds the class and closes this popup."
+msgstr ""
+
+#: gravitywp-css-selector.php:99
+msgid ""
+"For more help with CSS ready classes, look at the official Gravity Forms "
+"documentation on Gravity Forms documentation about CSS Ready Classes:"
+msgstr ""
+
+#: gravitywp-css-selector.php:100
+msgid "Gravity Forms"
+msgstr ""
+
+#: gravitywp-css-selector.php:101
+msgid "Gravity Wiz"
+msgstr ""
