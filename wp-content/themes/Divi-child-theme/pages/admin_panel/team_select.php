@@ -10,7 +10,7 @@ if ( isset( $team_sel ) ){
 
 $team_sel = $_SESSION['team_sel'];
 
-$teams = array('','3 @ 8','Arlington Trappers','Bethel University','BGA','Briarcrest Trap Club',
+$teams = array('All','3 @ 8','Arlington Trappers','Bethel University','BGA','Briarcrest Trap Club',
     'Cannon County HS Trap','Carroll County Claybusters','CBHS Brothers In Arms','CCTA - NO OPTION',
     'Cedar City Straights','Cedar View Shooters','Centennial Clay Target Team','Clarksville Academy',
     'Clarksville Christian School','Clay County Trap','Claygunners Skeet & Trap Team','Cocke County Clay Busters',

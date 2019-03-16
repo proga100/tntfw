@@ -49,7 +49,19 @@ class WP_users_widget extends WP_Widget {
     //    s25_member_loop($role);
         $cuser = wp_get_current_user();
 
+        $team_sel = $_REQUEST['team_selection'];
+
+        if ( isset( $team_sel ) ){
+
+            $_SESSION['team_sel'] = $team_sel;
+
+        }
+
+        $team_sel = $_SESSION['team_sel'];
+
        if (!empty($user_role)):
+
+
 		?>
 			  <?php echo $before_widget; ?>
 				  <?php if ( $title ) { echo $before_title . $title . $after_title; } 
@@ -75,6 +87,8 @@ class WP_users_widget extends WP_Widget {
 
                             }
 
+
+
                             uasort( $user_infos, function ( $a, $b ) {
 
 
@@ -99,17 +113,48 @@ class WP_users_widget extends WP_Widget {
 
                             });
 
+                            $i=1;
+
                             foreach ( $user_infos as $user ) {
                                 $id=$user->ID;
-							?>
 
-								<li> <a <?php if ($role == 'coache')  {echo 'href="coache-update-form?user_id='.$id;
-                                    }elseif($role == 'athlete') {
-                                        echo 'href="athlete-update-form?user_id='.$id;
-                                    }?>" ><h3><?php
-                                        echo ucfirst($user->last_name)."  " . ucfirst($user->first_name);
-                                             ?></h3></a></li>
-							<?php }
+                                    if (xprofile_get_field_data( 'Team', $user->ID ) == $team_sel ) {
+                                        ?>
+
+                                        <li>
+                                            <a <?php if ($role == 'coache') {
+                                                echo 'href="coache-update-form?user_id=' . $id;
+                                            } elseif ($role == 'athlete') {
+                                                echo 'href="athlete-update-form?user_id=' . $id;
+                                            }?>" ><h3><?php
+                                                echo ucfirst($user->last_name) . "  " . ucfirst($user->first_name);
+                                                ?></h3></a></li>
+                                    <?php
+
+
+                                        $i++;
+                                    }
+
+
+                                if($team_sel == 'All'){
+                                        ?>
+
+                                        <li>
+                                            <a <?php if ($role == 'coache') {
+                                                echo 'href="coache-update-form?user_id=' . $id;
+                                            } elseif ($role == 'athlete') {
+                                                echo 'href="athlete-update-form?user_id=' . $id;
+                                            }?>" ><h3><?php
+                                                echo ucfirst($user->last_name) . "  " . ucfirst($user->first_name);
+                                                ?></h3>
+                                            </a>
+                                        </li>
+                                    <?php
+
+                                        $i++;
+                                    }
+
+                                }
                             ?>
 						</ul>
 			  <?php
@@ -119,6 +164,18 @@ class WP_users_widget extends WP_Widget {
         echo $after_widget;
 
        endif;
+
+        if ($i<56){
+
+         echo ' <style>
+                .ulist{
+                    height: auto !important;
+                }
+
+            </style>';
+
+        }
+
         ?>
 		<?php
 	}
@@ -237,8 +294,7 @@ function s25_member_loop($role) {
 
     endforeach;
 
-    echo "test";
-    exit;
+
 
     echo '</div>';
 }
