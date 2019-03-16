@@ -1,5 +1,16 @@
 <?php
 
+
+
+
+function tatwerat_startSession() {
+    if(!session_id()) {
+        session_start();
+    }
+}
+
+add_action('init', 'tatwerat_startSession', 1);
+
 //error_reporting( E_ALL );        ini_set('display_errors', 1);
 function my_theme_enqueue_styles() {
 
@@ -238,3 +249,28 @@ include('curl_requets_ata.php');
 include('admin_panel.php');
 
 //exit;
+
+
+function header_widgets_init() {
+
+    register_sidebar( array(
+
+        'name' => 'Header Sidebar',
+
+        'id' => 'header_sidebar',
+
+        'before_widget' => '<aside class="widget %2$s">',
+
+        'after_widget' => '</aside>',
+
+        'before_title' => '<h2 class="widget-title">',
+
+        'after_title' => '</h2>',
+
+    ) );
+
+}
+
+add_action( 'widgets_init', 'header_widgets_init' );
+
+include('widgets/team_selection.php');

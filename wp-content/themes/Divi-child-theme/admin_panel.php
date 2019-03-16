@@ -361,3 +361,14 @@ function user_coaches(){
 
 
         }
+
+
+function team_selection_shortcode() {
+
+    wp_enqueue_style('team_select', get_stylesheet_directory_uri() . '/pages/admin_panel/team_select_style.css', array(), '0.1.0', 'all');
+    ob_start();
+    require('pages/admin_panel/team_select.php');
+    return ob_get_clean();
+
+}
+add_shortcode('team_selection', 'team_selection_shortcode');

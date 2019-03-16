@@ -756,6 +756,14 @@ if ( ! function_exists( 'epanel_save_data' ) ) {
 					$updates_options = get_option( 'et_automatic_updates_options', array() );
 				}
 
+				// Network Admins can edit options like Super Admins but content will be filtered
+				// (eg `>` in custom CSS would be encoded to `&gt;`) so we have to disable kses filtering
+				// while saving epanel options.
+				$skip_kses = ! current_user_can( 'unfiltered_html' );
+				if ( $skip_kses ) {
+					kses_remove_filters();
+				}
+
 				foreach ( $options as $value ) {
 					$et_option_name   = $et_option_new_value = false;
 					$is_builder_field = isset( $value['is_builder_field'] ) && $value['is_builder_field'];
@@ -856,7 +864,7 @@ if ( ! function_exists( 'epanel_save_data' ) ) {
 
 							} elseif ( 'checkboxes' === $value['type'] ) {
 
-								if ( 'sanitize_text_field' === $value['value_sanitize_function'] ) {
+								if ( isset( $value['value_sanitize_function'] ) && 'sanitize_text_field' === $value['value_sanitize_function'] ) {
 									// strings
 									$et_option_new_value = array_map( 'sanitize_text_field', stripslashes_deep( $_POST[ $value['id'] ] ) );
 								} else {
@@ -929,6 +937,11 @@ if ( ! function_exists( 'epanel_save_data' ) ) {
 					}
 				}
 
+				if ( $skip_kses ) {
+					// Enable kses filters again
+					kses_init_filters();
+				}
+
 				$redirect_url = add_query_arg( 'saved', 'true', $redirect_url );
 
 				if ( 'js_disabled' === $source ) {
@@ -949,7 +962,7 @@ if ( ! function_exists( 'epanel_save_data' ) ) {
 				}
 
 				// Reset Google Maps API Key
-				update_option( 'et_google_api_settings', '' );
+				update_option( 'et_google_api_settings', array() );
 
 				// Resets WordPress custom CSS which is synced with Options Custom CSS as of WP 4.7
 				if ( function_exists( 'wp_get_custom_css' ) ) {

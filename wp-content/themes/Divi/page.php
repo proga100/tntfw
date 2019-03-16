@@ -14,6 +14,7 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
 
+
 <?php endif; ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -41,6 +42,8 @@ $is_page_builder_used = et_pb_is_pagebuilder_used( get_the_ID() );
 				<?php endif; ?>
 
 					<div class="entry-content">
+
+
 					<?php
 						the_content();
 
