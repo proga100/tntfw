@@ -1,0 +1,162 @@
+/*
+Theme Name: Divi Child
+Theme URI: http://example.com/Divi-child/
+Version: 1.0.0
+Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  Divi-child
+Template: Divi
+*/
+
+.gform_wrapper.two-column_wrapper ul.gform_fields {
+    display: none;
+}
+
+.gform_wrapper.two-column_wrapper ul.gform_column li.gsection:first-child {
+    display: none;
+}
+.gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+    display: block;
+}
+
+@media only screen and (min-width: 641px) {
+    .gform_wrapper .left_label input.medium, .gform_wrapper .left_label select.medium, .gform_wrapper .right_label input.medium, .gform_wrapper .right_label select.medium {
+        width: 92% !important;
+    }
+
+    input.datepicker.medium.mdy {
+        width: calc(65% - 8px) !important;
+    }
+    li.label_full {
+        width: 90% !important;
+        margin-left: 0% !important;
+    }
+
+    .gform_wrapper.two-column_wrapper ul.gform_fields.gform_column {
+        display: block;
+        float: left;
+        width: 50%;
+    }
+}
+
+input.gform_button.button {
+    display: block;
+    width: 50% !important;
+    height: 30px !important;
+    color: #e59504;
+    font-weight: bold;
+    background:  #2f2018;
+
+}
+
+li.label_full {
+    background: #2f2018;
+    height: 35px;
+    padding-top: 10px !important;
+    padding-left: 5px !important;
+}
+
+.cert label.gfield_label {
+    display: none;
+    width: 0% !important;
+    padding: 0px !important;
+
+}
+
+.cert .ginput_container.ginput_container_checkbox {
+    margin-left: 0% !important;
+    width: 100% !important;
+}
+
+ .gf_right_half input.datepicker.medium {
+    width: calc(25% - 8px) !important;
+}
+
+.ginput_right label.gfield_label, .gf_right_half label.gfield_label {
+    width: 70% !important;
+}
+
+.ginput_right .ginput_container input.medium {
+    width: 40% !important;
+}
+
+.ginput_right_m .ginput_container input.medium {
+    width: 60% !important;
+}
+.ginput_right_m .ginput_container input.datepicker.medium {
+    width: 40% !important;
+}
+
+.ginput_right_m label.gfield_label {
+    width: 50% !important;
+}
+.header_h2 h2.gsection_title {
+    font-size: 1em;
+
+}
+
+.row.history.clearfix.rtl-clearfix-history {
+    display: none;
+    margin: 0px;
+}
+
+.gform_wrapper form ul.gform_fields.left_label li.gfield.cert ul {
+    width: 100% !important;
+}
+
+
+.navigation ul ul {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+    background: #2f2018;
+}
+
+
+#wp_users_widget-3 ul.ulist {
+    list-style-type: none;
+}
+
+.gfield.credit_card {
+    width: 400px !important;
+}
+
+.dash_full{
+
+    width:100%;
+
+}
+.dash_left{
+    width:30%;
+    float: left;
+    text-align: center;
+}
+.dash_left_2{
+    width:30%;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.dash_text {
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content{
+    top: 30px; height: 257px; z-index: 1; background-color: rgb(0, 153, 51);
+}
+
+.status-bar{
+    height: 24px; z-index: 3; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(102, 102, 102);
+}
+
+
+
+.accordion-title {
+    cursor: pointer;
+}
+
+

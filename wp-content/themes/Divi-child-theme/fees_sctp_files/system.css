@@ -1,0 +1,407 @@
+
+td {
+    color:black;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+a.panel {
+    color:black;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+    text-decoration:none;
+}
+
+font.hdr1 {
+    color:#FF4500;
+    font-family:Calibri, MSSans;
+    font-size:20px;
+    font-weight:bold;
+}
+
+font.tabs {
+    color:black;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+    font-weight:bold;
+}
+
+font.note {
+    color:blue;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+    font-style:italic;
+}
+
+font.error {
+    color:red;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: silver;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    silver;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    silver;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    silver;
+}
+
+body.shot {
+    background-image: url(images/shot6.png);
+    background-repeat: no-repeat;
+    background-color:white;
+    color:black;
+}
+
+td.gold {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:#FFD700;
+    background-image:-moz-linear-gradient(-90deg,#FFD700,black);
+    background-image:-ms-linear-gradient(top,#FFD700,black); /* IE10 */
+    background: -webkit-linear-gradient(#FFD700, white);
+}
+
+td.silver {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:silver;
+    background-image:-moz-linear-gradient(-90deg,silver,black);
+    background-image:-ms-linear-gradient(top,silver,black); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,black);
+}
+
+td.bronze {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:#936B09;
+    background-image:-moz-linear-gradient(-90deg,#936B09,black);
+    background-image:-ms-linear-gradient(top,#936B09,black); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,#936B09,black);
+}
+
+td.title {
+    height:25;
+    color:black;
+    font-weight:bold;
+    border:solid white 1;
+    border:1px solid white;
+    background-color:#0069aa;
+    background-image:-moz-linear-gradient(-90deg,#0069aa,white);
+    background-image:-ms-linear-gradient(top,#0069aa,white); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,#0069aa,white);
+}
+
+td.title_rev {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:#0069aa;
+    background-image:-moz-linear-gradient(-90deg,black,#0069aa);
+    background-image:-ms-linear-gradient(top,black,#0069aa); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,black,#0069aa);
+}
+
+td.column {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#f4911e;
+    background-image:-moz-linear-gradient(-90deg,white,#f4911e);
+    background-image:-ms-linear-gradient(top,white,#f4911e); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,white,#f4911e);
+}
+
+td.region_1 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#087BCE;
+    background-image:-moz-linear-gradient(-90deg,silver,#087BCE);
+    background-image:-ms-linear-gradient(top,silver,#087BCE); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#087BCE);
+}
+
+td.region_2 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#9900FF;
+    background-image:-moz-linear-gradient(-90deg,silver,#9900FF);
+    background-image:-ms-linear-gradient(top,silver,#9900FF); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#9900FF);
+}
+
+td.region_3 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#FF0000;
+    background-image:-moz-linear-gradient(-90deg,silver,#FF0000);
+    background-image:-ms-linear-gradient(top,silver,#FF0000); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#FF0000);
+}
+
+td.region_4 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#FF00FF;
+    background-image:-moz-linear-gradient(-90deg,silver,#FF00FF);
+    background-image:-ms-linear-gradient(top,silver,#FF00FF); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#FF00FF);
+}
+
+td.region_5 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#DE4210;
+    background-image:-moz-linear-gradient(-90deg,silver,#DE4210);
+    background-image:-ms-linear-gradient(top,silver,#DE4210); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#DE4210);
+}
+
+td.region_6 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#FFFF00;
+    background-image:-moz-linear-gradient(-90deg,silver,#FFFF00);
+    background-image:-ms-linear-gradient(top,silver,#FFFF00); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#FFFF00);
+}
+
+td.region_7 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#0000FF;
+    background-image:-moz-linear-gradient(-90deg,silver,#0000FF);
+    background-image:-ms-linear-gradient(top,silver,#0000FF); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#0000FF);
+}
+
+td.region_8 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#00FF00;
+    background-image:-moz-linear-gradient(-90deg,silver,#00FF00);
+    background-image:-ms-linear-gradient(top,silver,#00FF00); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,silver,#00FF00);
+}
+
+td.footer {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#f4911e;
+    background-image:-moz-linear-gradient(-90deg,#f4911e,black);
+    background-image:-ms-linear-gradient(top,#f4911e,black); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,#f4911e,black);
+}
+
+td.loss {
+    height:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#B32B18;
+    background-image:-moz-linear-gradient(-90deg,#B32B18,black);
+    background-image:-ms-linear-gradient(top,#B32B18,black); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,#B32B18,black);
+}
+
+td.win {
+    height:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:green;
+    background-image:-moz-linear-gradient(-90deg,green,black);
+    background-image:-ms-linear-gradient(top,green,black); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,green,black);
+}
+td.row_even {
+    height:22;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:white;
+}
+td.row_odd {
+    height:22;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#F0F0F0;
+}
+td.row_hilite {
+    height:22;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:yellow;
+}
+
+td.tab_comp {
+    height:22;
+    font-weight:bold;
+    color:black;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:silver;
+    background-image:-moz-linear-gradient(-90deg,white,silver);
+    background-image:-ms-linear-gradient(top,white,silver); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,white,silver);
+}
+
+td.tab_comp_active {
+    height:22;
+    font-weight:bold;
+    color:black;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:orangered;
+    background-image:-moz-linear-gradient(-90deg,white,orangered);
+    background-image:-ms-linear-gradient(top,white,orangered); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,white,orangered);
+}
+
+td.tab_act {
+    width:30;
+    height:100;
+    font-weight:bold;
+    font-size:16;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:orangered;
+    background-image:-moz-linear-gradient(0deg,gainsboro,orangered);
+    background-image:-ms-linear-gradient(left,gainsboro,orangered); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,gainsboro,orangered);
+}
+td.tab_inact {
+    width:30;
+    height:100;
+    color:black;
+    font-size:16;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:silver;
+    background-image:-moz-linear-gradient(0deg,white,silver);
+    background-image:-ms-linear-gradient(left,white,silver); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,white,silver);
+}
+td.sysmenu {
+    height:25px;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:silver;
+    background-image:-moz-linear-gradient(-90deg,white,silver);
+    background-image:-ms-linear-gradient(top, white,silver); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,white,silver);
+}
+
+td.sysmenusel {
+    height:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#B32B18;
+    background-image:-moz-linear-gradient(-90deg,#B32B18,black);
+    background-image:-ms-linear-gradient(top,#B32B18,black); /* IE10 */
+    background: -webkit-linear-gradient(-90deg,#B32B18,black);
+}
+
+.tscroll {
+    overflow:auto;
+    border:solid silver 1;
+    width:898px;
+    height:7em;
+    background:white;
+}
+
+.tscroll_tall {
+    overflow:auto;
+    border:solid silver 1;
+    width:298px;
+    height:25em;
+    background:white;
+}
+
+.tscroll_menu {
+    overflow:auto;
+    border:solid silver 1;
+    width:170px;
+    height:20em;
+    background:white;
+}
+
+.rotateit{
+    width:30;
+    display:block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+
+
+img.logos {
+    height: 60px;
+}

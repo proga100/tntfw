@@ -1,0 +1,363 @@
+
+td {
+    color:black;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+a.panel {
+    color:black;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+    text-decoration:none;
+}
+
+font.hdr1 {
+    color:#FF4500;
+    font-family:Calibri, MSSans;
+    font-size:20px;
+    font-weight:bold;
+}
+
+font.tabs {
+    color:black;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+    font-weight:bold;
+}
+
+font.note {
+    color:blue;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+    font-style:italic;
+}
+
+font.error {
+    color:red;
+    font-family:Calibri, MSSans;
+    font-size:12px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: silver;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    silver;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    silver;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    silver;
+}
+
+body.shot {
+    background-image: url(images/shot6.png);
+    background-repeat: no-repeat;
+    background-color:white;
+    color:black;
+}
+
+td.gold {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:#FFD700;
+
+}
+
+td.silver {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:silver;
+
+}
+
+td.bronze {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:#936B09;
+
+}
+
+td.title {
+    height:25;
+    color:black;
+    font-weight:bold;
+    border:solid white 1;
+    border:1px solid white;
+    background-color:#b2aa7e;
+
+
+    
+}
+
+td.title_rev {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:#a26b0b;
+
+}
+
+td.column {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#b2aa7e;
+
+}
+
+td.region_1 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#a26b0b;
+
+}
+
+td.region_2 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#9900FF;
+
+}
+
+td.region_3 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#FF0000;
+
+}
+
+td.region_4 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#FF00FF;
+
+}
+
+td.region_5 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#DE4210;
+
+}
+
+td.region_6 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#FFFF00;
+
+}
+
+td.region_7 {
+    height:22;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#0000FF;
+
+}
+
+td.region_8 {
+    height:22;
+    color:black;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#00FF00;
+
+}
+
+td.footer {
+    height:25;
+    color:white;
+    font-weight:bold;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#a26b0b;
+
+}
+
+td.loss {
+    height:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#a26b0b;
+
+}
+
+td.win {
+    height:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:green;
+
+}
+td.row_even {
+    height:22;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:white;
+}
+td.row_odd {
+    height:22;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#F0F0F0;
+}
+td.row_hilite {
+    height:22;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:yellow;
+}
+
+td.tab_comp {
+    height:22;
+    font-weight:bold;
+    color:black;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:silver;
+
+}
+
+td.tab_comp_active {
+    height:22;
+    font-weight:bold;
+    color:black;
+    border:solid black 1;
+    border:1px solid black;
+    background-color:orangered;
+
+}
+
+td.tab_act {
+    width:30;
+    height:100;
+    font-weight:bold;
+    font-size:16;
+    color:black;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:orangered;
+
+}
+td.tab_inact {
+    width:30;
+    height:100;
+    color:black;
+    font-size:16;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:silver;
+
+}
+td.sysmenu {
+    height:25px;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:silver;
+
+}
+
+td.sysmenusel {
+    height:25px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border:solid silver 1;
+    border:1px solid silver;
+    background-color:#a26b0b;
+
+}
+
+.tscroll {
+    overflow:auto;
+    border:solid silver 1;
+    width:898px;
+    height:7em;
+    background:white;
+}
+
+.tscroll_tall {
+    overflow:auto;
+    border:solid silver 1;
+    width:298px;
+    height:25em;
+    background:white;
+}
+
+.tscroll_menu {
+    overflow:auto;
+    border:solid silver 1;
+    width:170px;
+    height:20em;
+    background:white;
+}
+
+.rotateit{
+    width:30;
+    display:block;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+
+
+img.logos {
+    height: 60px;
+}
