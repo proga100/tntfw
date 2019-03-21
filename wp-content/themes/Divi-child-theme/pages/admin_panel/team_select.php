@@ -25,7 +25,28 @@ $teams = array('All','3 @ 8','Arlington Trappers','Bethel University','BGA','Bri
     'Heritage Shooting Team','HFA Clay Target Team','Hoodlum Alley Claybusters','Houston County Lucky Shots',
     'Houston High School Trap Team','HSSC Crush','Hutchison','Independence High School Talons','Independence Trap Team','Jefferson County 4-H Patriot Shooters',
     'Bartlett Trap Team');
+	
+if( is_user_logged_in() ) {
+				$user = wp_get_current_user();
+				$role = ( array ) $user->roles;
+				
+				if(in_array('admins', $role)){
+				
+			  }elseif(in_array('coache', $role)){
+				  $team = xprofile_get_field_data( 'Team', $user->ID );  
+				  
+				$teams = array('All',$team );
+				
+			  }elseif(in_array('athlete', $role)){
+				$teams  =null; 
+			  }
+		
+}
+
+if (isset($teams)):
 ?>
+
+
 <div class="team_sel"><label >Team Selection</label>
 
     <form action="" id="team_form" method="get">
@@ -57,3 +78,6 @@ $teams = array('All','3 @ 8','Arlington Trappers','Bethel University','BGA','Bri
         });
     });
 </script>
+
+<?php endif; ?>
+

@@ -198,7 +198,9 @@ function wpb_show_current_user_attachments( $query ) {
 // add_action( 'bp_ready', 'get_update_all_athltes' );
 
 function get_update_all_athltes(){
-	
+    require_once(ABSPATH.'wp-admin/includes/user.php' );
+    require_once(ABSPATH.'wp-admin/includes/ms.php' );
+
 	$users = get_users( $args );
 	$i=1;
 		foreach( $users as $user ){
@@ -206,35 +208,50 @@ function get_update_all_athltes(){
 			 if( function_exists( 'xprofile_get_field_data' ) ) {
 				 
 				 $u = new WP_User( $user->ID );
-				if( $u ->has_cap('athlete') ){
-					echo $i."   ";
+				if( $u ->has_cap('Athlete') ){
+					echo $i."  ";
 
 					$i++;					
 						
-			//	if (xprofile_get_field_data( 'MemberTypeText', $user->ID ) == 'athlete'){
-				//	echo	xprofile_get_field_data( 'MemberTypeText', $user->ID ); 
-					
-							//bp_set_member_type($user->ID, 'athlete');
-							//	echo	bp_get_member_type($user->ID );
-							// $u = new WP_User( $user->ID );
-							// Remove role
-							//$u->remove_role( 'subscriber' );
+			        if (xprofile_get_field_data( 'MemberTypeText', $user->ID ) == 'athlete') {
+                       	echo	xprofile_get_field_data( 'MemberTypeText', $user->ID );
 
-							// Add role
-						//	$u->add_role( 'athlete' );
-					//	$user_athlete =$user_athlete;
-					
-						$Gender = xprofile_set_field_data( 111, $user->ID, get_site_url().'/athlete-update-form/?user_id='.$user->ID );
-				  
-					
-		
+
+                        if (wp_delete_user($user->ID)) {
+
+
+                            if (wpmu_delete_user($user->ID )){
+                                echo 'User deleted' . $user->ID;
+                                echo '<br>';
+
+                            }
+
+                        }
+
+
+                    //    bp_set_member_type($user->ID, 'coache');
+                    // 	echo	bp_get_member_type($user->ID );
+                    //   $u = new WP_User( $user->ID );
+                        // Remove role
+                   //   $u->remove_role( 'athlete' );
+                   //     echo $user->ID;
+                        // Add role
+                  //    	$u->add_role( 'Coache' );
+                        //	$user_athlete =$user_athlete;
+
+                        //	$Gender = xprofile_set_field_data( 111, $user->ID, get_site_url().'/athlete-update-form/?user_id='.$user->ID );
+
+
+                  //  }
 	
-				}
+			    	}
 				}else{
 					echo "NO";
 				}
 		
 		}
+
+            exit;
 
 }
 
@@ -274,3 +291,5 @@ function header_widgets_init() {
 add_action( 'widgets_init', 'header_widgets_init' );
 
 include('widgets/team_selection.php');
+
+    ?>

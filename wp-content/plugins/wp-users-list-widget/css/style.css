@@ -21,3 +21,37 @@ ul.ulist{ margin-left:10px;}
 .widget_wp_users_widget		.ulist h3 {
     font-size: 14px;
 }
+
+ul.ulist::-webkit-scrollbar-button { 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:6px; 
+height:0px 
+} 
+
+ul.ulist::-webkit-scrollbar-track { 
+background-color:#2f2018; 
+box-shadow:0px 0px 3px #000 inset; 
+} 
+
+ul.ulist::-webkit-scrollbar-thumb { 
+-webkit-border-radius: 5px; 
+border-radius: 5px; 
+background-color:#e59504; 
+box-shadow:0px 1px 1px #fff inset; 
+background-image:url('https://yraaa.ru/_pu/24/59610063.png'); 
+background-position:center; 
+background-repeat:no-repeat; 
+} 
+
+ul.ulist::-webkit-resizer{ 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:7px; 
+height:0px 
+} 
+
+ul.ulist::-webkit-scrollbar{ 
+width: 11px; 
+}
+	

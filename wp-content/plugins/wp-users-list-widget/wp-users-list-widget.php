@@ -40,7 +40,7 @@ class WP_users_widget extends WP_Widget {
 		$number 	= $instance['number']; 
 		$role 	= $instance['role'];
 
-
+		
 		$user_query = new WP_User_Query(
             array( 'role' =>$role,
                 'number'=>$number,
@@ -58,18 +58,23 @@ class WP_users_widget extends WP_Widget {
         }
 
         $team_sel = $_SESSION['team_sel'];
-
-       if (!empty($user_role)):
-
+		
+		$user = wp_get_current_user();
+				$user_role = ( array ) $user->roles;
+		
+			
+       if ((in_array('coache', $user_role))  ||  (in_array('admins', $user_role))  ):
+		
 
 		?>
 			  <?php echo $before_widget; ?>
 				  <?php if ( $title ) { echo $before_title . $title . $after_title; } 
 				 ?>
 
-						<ul class="ulist" style="height:1800px;overflow-y:scroll">
+						<ul class="ulist" style="height:1800px;overflow-y:auto">
 							<?php
-                            foreach ( $user_query->results as $user ) {
+                            foreach ( user_athletes() as $user ) {
+								
                                 if ('athlete' == $user_role ){
 
                                     if ($cuser->id == $user->id){
@@ -117,7 +122,7 @@ class WP_users_widget extends WP_Widget {
 
                             foreach ( $user_infos as $user ) {
                                 $id=$user->ID;
-
+									
                                     if (xprofile_get_field_data( 'Team', $user->ID ) == $team_sel ) {
                                         ?>
 
@@ -170,6 +175,7 @@ class WP_users_widget extends WP_Widget {
          echo ' <style>
                 .ulist{
                     height: auto !important;
+					
                 }
 
             </style>';

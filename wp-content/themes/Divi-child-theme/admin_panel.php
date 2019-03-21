@@ -50,8 +50,11 @@ function adminpanel_athletes_report() {
 	// $search_criteria['field_filters'][] = array( 'key' => '14', 'value' => 'M' );
 	
 	// $athletes_male_entries_count= GFAPI::count_entries( $form_id, $search_criteria );
+
+		
 	
-		foreach (user_athletes() as $user_athlete){
+	
+		foreach (user_athletes()  as $user_athlete){
 					$Gender = xprofile_get_field_data( 'Gender', $user_athlete->ID );  
 				  
 					 if ($Gender == 'M' ){
@@ -70,8 +73,7 @@ function adminpanel_athletes_report() {
 		
 		
 	
-
-	
+		
 	
 	$payments_athletes 	= count($athlete_payments);
 
@@ -291,7 +293,33 @@ function user_athletes(){
 			  }
 			 			 
 			}
-	return 	$users;	
+			
+		$team_sel = $_REQUEST['team_selection'];
+
+        if ( isset( $team_sel ) ){
+
+            $_SESSION['team_sel'] = $team_sel;
+
+        }
+
+        $team_sel = $_SESSION['team_sel'];
+
+		
+	foreach ($users as $athl){
+		
+			
+		   if (xprofile_get_field_data( 'Team', $athl->ID ) == $team_sel ) {
+                                       
+
+				$athletes[]=$athl;
+                                      
+			}
+			
+			 if($team_sel == 'All'  || $team_sel == '') $athletes[]=$athl;
+		
+	}
+	
+	return 	$athletes;	
 }
 
 
@@ -322,7 +350,35 @@ function user_coaches(){
 			  }
 			 			 
 			}
-	return 	$users;	
+				$team_sel = $_REQUEST['team_selection'];
+
+        if ( isset( $team_sel ) ){
+
+            $_SESSION['team_sel'] = $team_sel;
+
+        }
+
+        $team_sel = $_SESSION['team_sel'];
+
+		
+	foreach ($users as $coach){
+		
+			
+		   if (xprofile_get_field_data( 'Team', $coach->ID ) == $team_sel ) {
+                                       
+
+				$coaches[]=$coach;
+                                      
+			}
+			
+			 if($team_sel == 'All'  || $team_sel == '') $coaches[]=$coach;
+		
+	}
+	
+	return 	$coaches;		
+			
+			
+	
 }
 
 
