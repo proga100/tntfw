@@ -57,15 +57,16 @@ function adminpanel_athletes_report() {
 		foreach (user_athletes()  as $user_athlete){
 					$Gender = xprofile_get_field_data( 'Gender', $user_athlete->ID );  
 				  
-					 if ($Gender == 'M' ){
+					 if (($Gender == 'Male') || ($Gender == 'M') ){
 						 
 						 $users_athltes_male[] = $user_athlete;
-					 }elseif($Gender == 'F' ){
+					 }elseif(($Gender == 'Female') || ($Gender == 'F') ){
 						 $users_athltes_female[] = $user_athlete;  
 					 }
-					 $SCTPFormReceived = xprofile_get_field_data( 'SCTPFormReceived', $user_athlete->ID ); 
-					
-					if ($SCTPFormReceived){
+					 $SCTPFormReceived = xprofile_get_field_data( 'SCTPFormReceived', $user_athlete->ID );
+                    $PaymentDate = xprofile_get_field_data( 'Payment Date', $user_athlete->ID );
+
+					if (($SCTPFormReceived) || ($PaymentDate)){
 					$athlete_payments[]= $user_athlete->ID;						
 					}
 		
@@ -183,9 +184,10 @@ function dashboard_coaches_statistics() {
 	
 	$total_forms = $coaches_entries_count+$athletes_entries_count;
 	foreach (user_athletes() as $user_athlete){
-					$SCTPFormReceived = xprofile_get_field_data( 'SCTPFormReceived', $user_athlete->ID ); 
-					
-					if ($SCTPFormReceived){
+					$SCTPFormReceived = xprofile_get_field_data( 'SCTPFormReceived', $user_athlete->ID );
+                    $PaymentDate = xprofile_get_field_data( 'Payment Date', $user_athlete->ID );
+
+                    if (($SCTPFormReceived) || ($PaymentDate)){
 					$athlete_payments[]= $user_athlete->ID;	
 					
 					}
@@ -228,9 +230,10 @@ function adminpanel_graphics() {
 	
 	$total_forms = $coaches_entries_count+$athletes_entries_count;
 	foreach (user_athletes() as $user_athlete){
-					$SCTPFormReceived = xprofile_get_field_data( 'SCTPFormReceived', $user_athlete->ID ); 
-					
-					if ($SCTPFormReceived){
+					$SCTPFormReceived = xprofile_get_field_data( 'SCTPFormReceived', $user_athlete->ID );
+                    $PaymentDate = xprofile_get_field_data( 'Payment Date', $user_athlete->ID );
+
+                    if (($SCTPFormReceived) || ($PaymentDate)){
 					$athlete_payments[]= $user_athlete->ID;	
 					
 					}
