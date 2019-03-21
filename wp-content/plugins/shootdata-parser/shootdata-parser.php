@@ -66,7 +66,9 @@ function shoodata_users() {
 					xprofile_set_field_data( 47, $user_id , $data['yardage']  );
 					
 					// ata memebership due  id 46
-			xprofile_set_field_data( 46, $user_id , $data['membership']  );
+			         xprofile_set_field_data( 46, $user_id , $data['membership']  );
+                    xprofile_set_field_data( 132, $user_id , $data['aimmembership']  );
+
 				
 				//	print_r ($data);
 				}
@@ -118,9 +120,9 @@ function parser_shoot_curl($content){
     $dom->loadHTML($html);
       $container = $dom->getElementById("dnn_ctr976_View_ctl00_reportHeader");
 		$textcont = $container->textContent;
-		
-		$yardage = explode("Yardage:", $textcont );
-		
+         $aimmembership = explode("AIM Membership:", $textcont );
+		$yardage = explode("Yardage:", $aimmembership[0] );
+        $data['aimmembership'] =$aimmembership[1] ;
 		$data['yardage'] = $yardage[1];
 		$membership= explode("Name:", $textcont );
 		$membership= explode("Membership:", $membership[0] );

@@ -199,7 +199,58 @@ function wpb_show_current_user_attachments( $query ) {
 
 // add_action( 'bp_ready', 'get_update_all_athltes_edit_url' );
 
-// adding edit url
+// adding parents last name
+add_action( 'bp_ready', 'get_update_all_athltes_parents_lastname' );
+function get_update_all_athltes_parents_lastname(){
+
+    $users = get_users( $args );
+    $i=1;
+
+
+    foreach(   $users as $user ){
+
+
+        $i++;
+        if( function_exists( 'xprofile_get_field_data' ) ) {
+
+            $u = new WP_User( $user->ID );
+
+            // Get the user object.
+            $user = get_userdata( $user->ID  );
+
+// Get all the user roles as an array.
+            $user_roles = $user->roles;
+
+// Check if the role you're interested in, is present in the array.
+            if ( in_array( 'athlete', $user_roles, true ) ) {
+
+
+                if (xprofile_get_field_data( 'MemberTypeText', $user->ID ) == 'athlete') {
+
+                   $parents  = xprofile_get_field_data( 'Parents', $user->ID );
+                    echo "==". $user->ID."   ==".$parents;
+                    $parents = explode(" ", $parents);
+                    xprofile_set_field_data( 133, $user->ID, $parents[0] );
+
+                }
+            }
+
+
+
+
+
+
+
+        }else{
+            echo "NO";
+        }
+
+    }
+
+    exit;
+
+}
+
 function get_update_all_athltes_edit_url(){
 
     $users = get_users( $args );
